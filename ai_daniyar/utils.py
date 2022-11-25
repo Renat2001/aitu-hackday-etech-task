@@ -33,6 +33,14 @@ def segment_image(image_shape, labels, centers):
                                               3))
     return segmented_image
 
+def label_matrix(image_shape, labels, centers):
+    centers = np.uint8(centers)
+    labeled_matrix = labels.reshape((image_shape[0], 
+                                     image_shape[1]))
+    labeled_matrix[labeled_matrix==0] = 4
+    labeled_matrix = pd.DataFrame(labeled_matrix)
+    return labeled_matrix
+
     
     
 
