@@ -136,4 +136,5 @@ jupyters/*.csv
 jupyters/images_1.ipynb
 jupyters/images_2.ipynb
 jupyters/images.ipynb
+jupyters/*.tif
 
